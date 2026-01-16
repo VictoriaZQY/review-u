@@ -130,7 +130,7 @@
 - 必考结论：DFS用栈，BFS用队列，这是二者的本质区别。
 
 ### ▶ 4. 哈希表 (Hash Table) 核心考点（选择必考）
-- 核心：通过哈希函数将「键(Key)」映射到「值(Value)」，查询效率$O(1)$；
+- 核心：通过哈希函数将「键(Key)」映射到「值(Value)」，查询效率 $O(1)$；
 - 必考问题：哈希冲突(Hash Collision) → 解决方式：链地址法(拉链法)、开放寻址法；
 - 应用：去重、计数、快速查找，是算法题的高频优化工具。
 
@@ -170,20 +170,25 @@
 #### 已考真题回顾: $f(x) = x\cos x + \sin x$ → $f''(x) = -3\sin x -x\cos x$
 #### 必考同类型二阶导题型（全部会算即可，考试换汤不换药）
 ① $f(x) = x\sin x + \cos x$ → $f'(x) = \sin x +x\cos x - \sin x =x\cos x$ → $f''(x) = \cos x -x\sin x$
+
 ② $f(x) = e^x \cos x$ → $f'(x) = e^x\cos x -e^x\sin x$ → $f''(x) = -2e^x\sin x$
+
 ③ $f(x) = x^2 \ln x$ → $f'(x) = 2x\ln x +x$ → $f''(x) = 2\ln x +3$
 
 #### 补充必考求导法则（你已考乘积法则，再考这2个）
-- 链式法则：$y=f(g(x))$ → $y' = f'(g(x)) \cdot g'(x)$ 如：$(\sin 2x)' = 2\cos2x$
-- 商法则：$(\frac{u}{v})' = \frac{u'v - uv'}{v^2}$ 如：$(\frac{\sin x}{x})' = \frac{x\cos x - \sin x}{x^2}$
+- 链式法则: $y=f(g(x))$ → $y' = f'(g(x)) \cdot g'(x)$ 如：$(\sin 2x)' = 2\cos2x$
+- 商法则: $(\frac{u}{v})' = \frac{u'v - uv'}{v^2}$ ,如: $(\frac{\sin x}{x})' = \frac{x\cos x - \sin x}{x^2}$
 
 ### ▶ 2. 积分补充必考（全部是你已考的「分部积分」为主，计算题必考）
 #### 核心公式：分部积分法 $\int u \, dv = uv - \int v \, du$ （优先级：反对幂三指）
 #### 必考积分题型（全部是真题同类型，直接记结果+步骤）
 ① $\int x\sin x dx = -x\cos x + \sin x + C$ （和你考的xcosx积分互为相反数，必考）
+
 ② $\int x e^x dx = e^x(x-1) + C$ （套题已考，再考概率极高）
+
 ③ $\int \ln x dx = x\ln x -x + C$ （对数函数积分，必考）
-④ 定积分计算：$\int_0^\pi \sin x dx = -\cos x \big|_0^\pi = 2$ （牛顿莱布尼茨公式，必考）
+
+④ 定积分计算: $\int_0^\pi \sin x dx = -\cos x \big|_0^\pi = 2$ （牛顿莱布尼茨公式，必考）
 
 #### 必考积分性质
 - 奇偶性：奇函数在对称区间 $[-a,a]$ 的积分=0；偶函数在对称区间 $[-a,a]$ 的积分=2 $\int_0^a f(x)dx$ → 选择必考。
